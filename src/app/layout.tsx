@@ -14,6 +14,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Note that in the layout the header is here to be present on all pages of the website
+  // makes it easier for users to use the navigation
   return (
     <html lang="en">
       <body className="dark:bg-[#1A1C29] bg-white">
@@ -24,6 +26,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
+
           {children}
         </ThemeProvider>
       </body>
