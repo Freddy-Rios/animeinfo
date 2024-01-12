@@ -28,6 +28,11 @@ function SearchInput() {
     // Do something with the form values.
     // This will be type-safe and validated.
     console.log(values);
+
+    // this is useing the router to go to search page.tsx with the values
+    router.push(`/search/${values.input}`); // this is string interperlation to pass the searched value
+    // Rest the search bar after click enter
+    form.reset();
   }
 
   return (
